@@ -20,8 +20,8 @@ function BookList(props) {
   return (
     <div className="book-list">
       {
-        bookListData.map((item) => (
-          <BookItem book={item} />
+        bookListData.map((item, index) => (
+          <BookItem book={item} key={index}/>
         ))
         // Do pass ArrayyOfBooks.map() ==> props --> BookItemType
       }

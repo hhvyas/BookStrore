@@ -24,18 +24,18 @@ function QuantitySelection({handleQuantitiyDecrease, handleQuantitiyIncrease, bo
             <div className="quantity-selection-buttons">
               <button
                 onClick={handleQuantitiyDecrease}
-                disabled={DecrementButtonDisableConditions()}
-                className={`${DecrementButtonDisableConditions() ? 'button-disbled' : ''}`}
+                disabled={!book.isAvailable || bookQuantity === 1}
+                id={`${DecrementButtonDisableConditions() ? 'button-disabled' : ''}`}
               >
-                <span>-</span>
+                -
               </button>
               <p>{bookQuantity}</p>
               <button
                 onClick={handleQuantitiyIncrease}
-                disabled={IncrementButtonDisableConditions()}
-                className={`${IncrementButtonDisableConditions() ? 'button-disabled' : ''}`}
+                disabled={!book.isAvailable || book.QuantitiyLeft <= bookQuantity || bookQuantity >= 50}
+                id={`${IncrementButtonDisableConditions() ? 'button-disabled' : ''}`}
               >
-                <span>+</span>
+                +
               </button>
             </div>
           </div>

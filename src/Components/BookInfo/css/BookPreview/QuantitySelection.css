@@ -24,12 +24,10 @@
     cursor: pointer;
 }
 .quantity-selection button:hover {
-    background-color: rgba(220, 220, 220, 0.4);;
+    background-color: rgba(220, 220, 220, 0.4);
     border: 1px solid black;
 }
-.quantity-selection button span{
-    font-size: large;
-}
+
 .quantity-selection-buttons > p {
     width: 30px;
     display: flex;
@@ -39,8 +37,12 @@
 
 
 
-.button-disbled{
-    background-color: black;
+#button-disabled{
+    cursor:not-allowed;
+}
+#button-disabled:hover{
+    background-color: white;
+    border: 1px solid rgba(220, 220, 220, 0.4);
 }
 
 @media screen and (min-width: 768px){

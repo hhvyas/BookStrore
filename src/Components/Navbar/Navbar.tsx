@@ -10,13 +10,13 @@ function Navbar() {
   return (
     <header>
       <nav>
-        <Link to="/" style={{textDecoration: 'none', color: 'black', fontWeight: '700'}} className="nav-logo">
-          Bookstore
+        <Link to="/" style={{textDecoration: 'none', color: 'black', fontWeight: "800", display: "flex", alignItems: "center"}}>
+          <div className="nav-logo">Bookstore</div>
         </Link>
         <SearchQueryForm />
-        <div className="nav-filter">
+        {/* <div className="nav-filter">
           <FaFilter className="nav-filter-icon" />
-        </div>
+        </div> */}
       </nav>
     </header>
   );

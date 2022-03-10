@@ -1,6 +1,7 @@
 .book-list {
+    width: 70%;
     display: grid;
-    margin: 5% 10% 0 10%; 
+    margin: 5% 5% 0 5%; 
     place-items: center;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }

@@ -13,17 +13,14 @@ import { FaSearch } from 'react-icons/fa';
 
 
 function SearchQueryForm() {
-  const [searchQuery, setSearchQuery] = React.useState('');
-  const handleQueryChange = (event: any): void => {
-    setSearchQuery(event.target.value);
-  }
+  
+
   const handleQuerySubmit = (event: any): void => {
-    event.preventDefault();
-    alert(searchQuery);
+    // alert(searchQuery);
   }
   return (
     <form className="nav-search-icon" onSubmit={handleQuerySubmit}>
-        <SearchInput placeholder='Search Book' value={searchQuery} onChange={handleQueryChange}/>
+        <SearchInput placeholder='Search Book' />
         <FaSearch className='nav-search-submit' onClick={handleQuerySubmit}/>
     </form>
   )
