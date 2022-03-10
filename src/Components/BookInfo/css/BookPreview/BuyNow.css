@@ -1,0 +1,31 @@
+.buy-now {
+    display: flex;
+    width: 30%;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.buy-now > button {
+    padding: 15px 35px;
+    background-color: white;
+}
+.buy-now > button:hover {
+    background-color: rgba(220, 220, 220, 0.4);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .buy-now {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .buy-now {
+        width: 100%;
+    }
+    .buy-now > button {
+        width: 80%;
+    }
+}
