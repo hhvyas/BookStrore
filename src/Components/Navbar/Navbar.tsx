@@ -13,7 +13,7 @@ function Navbar() {
         <Link to="/" style={{textDecoration: 'none', color: 'black', fontWeight: "800", display: "flex", alignItems: "center"}}>
           <div className="nav-logo">Bookstore</div>
         </Link>
-        <SearchQueryForm />
+        {/* <SearchQueryForm /> */}
         {/* <div className="nav-filter">
           <FaFilter className="nav-filter-icon" />
         </div> */}
